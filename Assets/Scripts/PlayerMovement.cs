@@ -9,11 +9,6 @@ public class PlayerMovement : MonoBehaviour
     public float horizontalInput;
     public SpriteRenderer spriteRenderer;
 
-    void Start()
-    {
-        
-    }
-
     void Update()
     {
         horizontalInput = Input.GetAxisRaw("Horizontal");
