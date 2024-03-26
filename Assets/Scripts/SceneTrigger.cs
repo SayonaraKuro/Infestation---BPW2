@@ -9,20 +9,45 @@ public class SceneTrigger : MonoBehaviour
     bool isTriggered = false;
     public SpriteRenderer background;
     public Sprite newBackground;
-    public Light2D lighting;
-    public Light2D spotLight1;
+    public Light2D skyLighting;
     public Volume volume1;
     public Volume volume2;
+    public GameObject bridge1;
+    public GameObject bridge2;
+    public GameObject bridgeLight;
+
+    public GameObject sick1;
+    public GameObject sick2;
+    public GameObject sick3;
+    public GameObject tree1;
+    public GameObject tree2;
+    public GameObject tree3;
+    public GameObject foliage1;
+    public GameObject foliage2;
+    public GameObject foliage3;
 
     void Update()
     {
         if(isTriggered == true)
         {
             background.sprite = newBackground;
-            lighting.intensity = 0.4f;
-            spotLight1.enabled = true;
+            skyLighting.intensity = 0.7f;
             volume1.enabled = false;
             volume2.enabled = true;
+            bridge1.SetActive(false);
+            bridge2.SetActive(true);
+            bridgeLight.SetActive(true);
+
+            sick1.SetActive(true);
+            sick2.SetActive(true);
+            sick3.SetActive(true);
+            tree1.SetActive(false);
+            tree2.SetActive(false);
+            tree3.SetActive(false);
+            foliage1.SetActive(false);
+            foliage2.SetActive(false);
+            foliage3.SetActive(false);
+
         }
     }
 
