@@ -23,8 +23,6 @@ public class SceneTrigger : MonoBehaviour
     public GameObject tree2;
     public GameObject tree3;
     public GameObject foliage1;
-    public GameObject foliage2;
-    public GameObject foliage3;
 
     void Update()
     {
@@ -44,9 +42,7 @@ public class SceneTrigger : MonoBehaviour
             tree1.SetActive(false);
             tree2.SetActive(false);
             tree3.SetActive(false);
-            foliage1.SetActive(false);
-            foliage2.SetActive(false);
-            foliage3.SetActive(false);
+            foliage1.SetActive(true);
 
         }
     }
